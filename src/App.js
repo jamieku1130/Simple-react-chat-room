@@ -72,7 +72,7 @@ class App extends Component {
 
   componentDidMount = () => {
     this.scrollToBottom();
-    this.ws = new WebSocket("ws://fathomless-shelf-62294.herokuapp.com/");
+    this.ws = new WebSocket("wss://fathomless-shelf-62294.herokuapp.com/");
     this.ws.onopen = () => {
       console.log("WebSocket server is connected");
       // this.ws.send("I'm loggin, ok?");
